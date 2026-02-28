@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fdf6ec 0%, #f5e6c8 50%, #ecdbb0 100%);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container {
+    background: #ffffff;
+    padding: 2.2rem 2rem;
+    border-radius: 1.5rem;
+    min-height: 45vh;
+    width: 42vh;
+    box-shadow: 0 8px 32px rgba(175, 77, 152, 0.10), 0 2px 8px rgba(0,0,0,0.06);
+    border: 1px solid rgba(255,255,255,0.8);
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2d1a35;
+    letter-spacing: -0.3px;
+}
+
+form {
+    margin-top: 1.5rem;
+}
+
+.amount p,
+.from p,
+.to p {
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: #9a8a9e;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 0.45rem;
+}
+
+form input {
+    width: 100%;
+    border: 1.5px solid #ede0f0;
+    outline: none;
+    border-radius: 0.75rem;
+    font-size: 1.05rem;
+    font-family: 'DM Sans', sans-serif;
+    height: 3rem;
+    padding-left: 0.75rem;
+    color: #2d1a35;
+    background: #fdf9fe;
+    transition: border-color 0.2s;
+}
+
+form input:focus {
+    border-color: #af4d98;
+    background: #fff;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 1.5rem;
+    gap: 0.5rem;
+}
+
+.select-container {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    width: 6.5rem;
+    padding: 0.35rem 0.5rem;
+    border-radius: 0.65rem;
+    border: 1.5px solid #ede0f0;
+    background: #fdf9fe;
+    transition: border-color 0.2s;
+}
+
+.select-container:focus-within {
+    border-color: #af4d98;
+}
+
+.select-container img {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.select-container select {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #2d1a35;
+    width: auto;
+    cursor: pointer;
+}
+
+.dropdown i {
+    font-size: 1.1rem;
+    color: #af4d98;
+    background: #f9eef7;
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin-bottom: 0.1rem;
+    flex-shrink: 0;
+    transition: background 0.2s, transform 0.2s;
+    cursor: pointer;
+}
+
+.dropdown i:hover {
+    background: #f0d4ec;
+    transform: rotate(180deg);
+}
+
+.msg {
+    margin: 1.5rem 0 1.2rem 0;
+    font-size: 0.95rem;
+    color: #6b4b72;
+    font-weight: 500;
+    background: linear-gradient(90deg, #f9eef7, #fdf6f9);
+    padding: 0.65rem 0.9rem;
+    border-radius: 0.6rem;
+    border-left: 3px solid #af4d98;
+}
+
+form button {
+    width: 100%;
+    height: 3rem;
+    background: linear-gradient(135deg, #af4d98 0%, #c4689e 100%);
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    letter-spacing: 0.2px;
+    box-shadow: 0 4px 14px rgba(175, 77, 152, 0.28);
+    transition: opacity 0.18s, transform 0.18s, box-shadow 0.18s;
+}
+
+form button:hover {
+    opacity: 0.93;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(175, 77, 152, 0.35);
+}
+
+form button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(175, 77, 152, 0.22);
+}
